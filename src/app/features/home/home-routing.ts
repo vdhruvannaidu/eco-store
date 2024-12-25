@@ -1,0 +1,1 @@
+print(default_api.natural_language_write_file(language = "typescript", path = "src/app/features/home/home-routing.ts", prompt = "create a const named homeRoutes that is a type of Routes and use the HomeComponent to set the path"))

@@ -1,0 +1,1 @@
+print(default_api.natural_language_write_file(language = "typescript", path = "src/app/features/products/components/product-detail/product-detail.component.ts", prompt = "create a standalone product detail component"))

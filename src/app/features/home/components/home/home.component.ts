@@ -1,0 +1,1 @@
+print(default_api.natural_language_write_file(language = "typescript", path = "src/app/features/home/components/home/home.component.ts", prompt = "create a standalone component"))

@@ -1,0 +1,1 @@
+print(default_api.natural_language_write_file(language = "typescript", path = "src/app/features/products/index.ts", prompt = "create a barrel file"))
