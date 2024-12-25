@@ -1,1 +1,0 @@
-print(default_api.natural_language_write_file(language = "typescript", path = "src/app/features/products/components/product-list/product-list.component.ts", prompt = "create a standalone product list component. import InputFieldComponent from shared components and use it. also import Product from core models and ProductService from products services and use them."))
