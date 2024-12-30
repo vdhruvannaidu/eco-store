@@ -1,0 +1,14 @@
+<mat-sidenav #sidenav mode="over" position="end">
+    <div class="cart-content">
+      <h3>Cart Items</h3>
+      <!-- <div *ngIf="cartItems.length === 0; else hasItems">
+        <p>Your cart is empty.</p>
+      </div>
+      <ng-template #hasItems>
+        <div *ngFor="let item of cartItems">
+          <p>{{ item.name }} - ${{ item.price }} x {{item.quantity}}</p>
+        </div>
+      </ng-template> -->
+      <button mat-button (click)="sidenav.close()">Close Cart</button>
+    </div>
+  </mat-sidenav>

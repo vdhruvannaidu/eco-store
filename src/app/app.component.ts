@@ -1,28 +1,37 @@
 import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-// import { MatButtonModule } from './material'; // Import from the central file
-import { MatButtonModule } from '@angular/material/button';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 import { NgxSplideModule } from 'ngx-splide';
 import { NgxSplideComponent } from 'ngx-splide';
-
+import { HeaderComponent } from "./shared/components/header/header/header.component";
+import { BannerSliderComponent } from './shared/components/banner-slider/banner-slider/banner-slider.component';
+import { DrawerComponent } from './shared/components/drawer/drawer/drawer.component';
+import { MatSidenav } from '@angular/material/sidenav';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { ButtonComponent } from './shared/components/button/button/button.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    MatButtonModule,
-    MatIconModule,
-    MatToolbarModule,
     NgxSplideModule,
-  ],
+    HeaderComponent,
+    BannerSliderComponent,
+    DrawerComponent,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'eco-store';
+  newItemEvent :any;
   @ViewChild('splideRef', { static: false }) splideComponent!: NgxSplideComponent;
+  @ViewChild('sidenav') sidenav!: MatSidenav;
+
   splideOptions = {
     type: 'loop',
     perPage: 5,
@@ -89,6 +98,11 @@ export class AppComponent {
     },
     // Add more product objects
   ];
+
+  toggleSidenav(event: any) {
+    console.log(event);
+    this.sidenav.toggle();
+  }
 
   // goToPreviousSlide(): void {
   //   const splide = this.splideComponent.splide;

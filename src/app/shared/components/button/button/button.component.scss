@@ -1,0 +1,66 @@
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 140px;
+  }
+
+  button {
+    transition: all 0.3s ease;
+  
+    &:hover {
+      opacity: 0.9; // Slight opacity on hover
+    }
+  
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  
+    /* Add specific styles if necessary for custom button variants */
+    &.mat-flat-button {
+      /* Additional styles for mat-flat-button */
+    }
+  
+    &.mat-raised-button {
+      /* Additional styles for mat-raised-button */
+    }
+  
+    &.mat-stroked-button {
+      /* Additional styles for mat-stroked-button */
+    }
+  
+    &.mat-icon-button {
+      /* Additional styles for mat-icon-button */
+    }
+  
+    &.mat-fab {
+      /* Additional styles for mat-fab */
+    }
+  
+    &.mat-mini-fab {
+      /* Additional styles for mat-mini-fab */
+    }
+  }
+  
