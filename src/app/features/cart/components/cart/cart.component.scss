@@ -1,0 +1,14 @@
+:host {
+    display: block;
+    position: relative;
+  }
+
+
+  mat-drawer {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  mat-drawer-content{
+    width: 500px;
+    height: 100vh;
+  }

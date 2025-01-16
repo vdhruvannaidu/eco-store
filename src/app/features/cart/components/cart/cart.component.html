@@ -1,0 +1,113 @@
+<div
+  id="cart-backdrop"
+  class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"
+  
+></div>
+<div
+  id="cart-sidebar"
+  class="fixed top-0 right-0 h-screen w-[550px] max-w-full bg-white z-50 shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out"
+>
+  <!-- Cart Header -->
+  <div class="p-4 border-b">
+    <div class="flex items-center justify-between">
+      <h2 class="text-lg font-semibold">My Cart</h2>
+      <button
+        (click)="toggleCart(false)"
+        class="text-gray-500 hover:text-gray-700"
+      >
+        ✖
+      </button>
+    </div>
+    <div class="mt-4 flex items-center">
+      <div class="flex-1 text-center border-r">
+        <p class="text-sm font-medium">Free Shipping</p>
+        <p class="text-xs text-gray-500">Spend $100</p>
+      </div>
+      <div class="flex-1 text-center border-r">
+        <p class="text-sm font-medium">$15 off</p>
+        <p class="text-xs text-gray-500">Spend $135</p>
+      </div>
+      <div class="flex-1 text-center border-r">
+        <p class="text-sm font-medium">$25 off</p>
+        <p class="text-xs text-gray-500">Spend $175</p>
+      </div>
+      <div class="flex-1 text-center">
+        <p class="text-sm font-medium">$50 off</p>
+        <p class="text-xs text-gray-500">Spend $225</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Items -->
+  <div class="p-4 overflow-y-auto h-[calc(100vh-300px)]">
+    <div class="flex items-start justify-between mb-6">
+      <img
+        src="https://via.placeholder.com/80"
+        alt="Product Image"
+        class="w-20 h-20 object-cover"
+      />
+      <div class="flex-1 px-4">
+        <p class="text-sm font-semibold">All Day Lace T-Shirt Bra</p>
+        <p class="text-xs text-gray-500">36A / Charcoal</p>
+        <div class="mt-2 flex items-center">
+          <button
+            class="px-2 py-1 border rounded hover:bg-gray-200"
+          >-</button>
+          <input
+            type="text"
+            value="1"
+            class="w-8 text-center mx-2 border rounded"
+          />
+          <button
+            class="px-2 py-1 border rounded hover:bg-gray-200"
+          >+</button>
+        </div>
+      </div>
+      <p class="text-sm font-semibold">$78</p>
+    </div>
+    <!-- Additional Items -->
+    <div class="flex items-start justify-between mb-6">
+      <img
+        src="https://via.placeholder.com/80"
+        alt="Product Image"
+        class="w-20 h-20 object-cover"
+      />
+      <div class="flex-1 px-4">
+        <p class="text-sm font-semibold">24/7 Classic High Waist</p>
+        <p class="text-xs text-gray-500">XL / Taupe</p>
+        <div class="mt-2 flex items-center">
+          <button
+            class="px-2 py-1 border rounded hover:bg-gray-200"
+          >-</button>
+          <input
+            type="text"
+            value="1"
+            class="w-8 text-center mx-2 border rounded"
+          />
+          <button
+            class="px-2 py-1 border rounded hover:bg-gray-200"
+          >+</button>
+        </div>
+      </div>
+      <p class="text-sm font-semibold">$39</p>
+    </div>
+  </div>
+
+  <!-- Cart Footer -->
+  <div class="p-4 border-t">
+    <div class="text-center text-sm bg-pink-100 py-3 mb-4">
+      Join free to earn rewards & free shipping on $75+.
+      <a href="#" class="text-blue-600 font-semibold">Join Now</a>
+    </div>
+    <div class="flex justify-between items-center mb-4">
+      <p class="text-sm">Total:</p>
+      <p class="text-lg font-semibold">USD 117.00</p>
+    </div>
+    <button
+      class="w-full bg-black text-white py-3 rounded hover:bg-gray-800"
+    >
+      Checkout
+    </button>
+  </div>
+</div>
+

@@ -3,9 +3,6 @@ import { RouterOutlet } from '@angular/router';
 import {MatButtonModule} from '@angular/material/button';
 import { NgxSplideModule } from 'ngx-splide';
 import { NgxSplideComponent } from 'ngx-splide';
-import { HeaderComponent } from "./shared/components/header/header/header.component";
-import { BannerSliderComponent } from './shared/components/banner-slider/banner-slider/banner-slider.component';
-import { DrawerComponent } from './shared/components/drawer/drawer/drawer.component';
 import { MatSidenav } from '@angular/material/sidenav';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { ButtonComponent } from './shared/components/button/button/button.component';
@@ -16,12 +13,10 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     RouterOutlet,
     NgxSplideModule,
-    HeaderComponent,
-    BannerSliderComponent,
-    DrawerComponent,
     MatSidenavModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -103,6 +98,8 @@ export class AppComponent {
     console.log(event);
     this.sidenav.toggle();
   }
+
+  
 
   // goToPreviousSlide(): void {
   //   const splide = this.splideComponent.splide;

@@ -35,20 +35,20 @@
           <div class="lg:flex lg:items-start">
             <div class="lg:order-2 lg:ml-5">
               <div class="max-w-xl overflow-hidden rounded-lg">
-                <img class="h-full w-full max-w-full object-cover" src="/images/JHxMnVrtPMdcNU1s_7g7f.png" alt="" />
+                <img class="h-full w-full max-w-full object-cover" src="assets/images/nike.png" alt="" />
               </div>
             </div>
   
             <div class="mt-2 w-full lg:order-1 lg:w-32 lg:flex-shrink-0">
               <div class="flex flex-row items-start lg:flex-col">
                 <button type="button" class="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg border-2 border-gray-900 text-center">
-                  <img class="h-full w-full object-cover" src="/images/JHxMnVrtPMdcNU1s_7g7f.png" alt="" />
+                  <img class="h-full w-full object-cover" src="assets/images/nike2.png" alt="" />
                 </button>
                 <button type="button" class="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg border-2 border-transparent text-center">
-                  <img class="h-full w-full object-cover" src="/images/JHxMnVrtPMdcNU1s_7g7f.png" alt="" />
+                  <img class="h-full w-full object-cover" src="assets/images/shoe1.jpg" alt="" />
                 </button>
                 <button type="button" class="flex-0 aspect-square mb-3 h-20 overflow-hidden rounded-lg border-2 border-transparent text-center">
-                  <img class="h-full w-full object-cover" src="/images/JHxMnVrtPMdcNU1s_7g7f.png" alt="" />
+                  <img class="h-full w-full object-cover" src="assets/images/shoe2.jpg" alt="" />
                 </button>
               </div>
             </div>
@@ -122,6 +122,79 @@
               Cancel Anytime
             </li>
           </ul>
+
+          <!-- <mat-accordion>
+            <mat-expansion-panel hideToggle>
+              <mat-expansion-panel-header>
+                <mat-panel-title> This is the expansion title </mat-panel-title>
+                <mat-panel-description> This is a summary of the content </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+              <mat-expansion-panel-header>
+                <mat-panel-title> Self aware panel </mat-panel-title>
+                <mat-panel-description>
+                  Currently I am {{panelOpenState() ? 'open' : 'closed'}}
+                </mat-panel-description>
+              </mat-expansion-panel-header>
+              <p>I'm visible because I am open</p>
+            </mat-expansion-panel>
+          </mat-accordion> -->
+          <div class="mt-8">
+            <mat-accordion class="border-t border-gray-200 divide-y divide-gray-200">
+              <!-- Delivery & Returns Panel -->
+              <mat-expansion-panel hideToggle class="border-b">
+                <mat-expansion-panel-header class="px-4 py-2 flex justify-between items-center text-gray-900">
+                  <div class="flex w-full items-center justify-between">
+                  <span class="text-base font-medium">Delivery & Returns</span>
+                  <mat-icon class="text-gray-600">expand_more</mat-icon>
+                </div>
+                </mat-expansion-panel-header>
+                <div class="p-4 text-sm text-gray-700">
+                  <p>All purchases are subject to delivery fees.</p>
+                  <ul class="list-disc pl-5">
+                    <li>Standard delivery 4–9 business days</li>
+                  </ul>
+                  <p class="mt-2">
+                    Orders are processed and delivered Monday–Friday (excluding public holidays).
+                  </p>
+                  <p class="mt-2 font-medium">Nike Members enjoy free returns.</p>
+                </div>
+              </mat-expansion-panel>
+            
+              <!-- Reviews Panel -->
+              <mat-expansion-panel hideToggle class="border-b">
+                <mat-expansion-panel-header class="px-4 py-2 flex justify-between items-center text-gray-900">
+                  <span class="text-base font-medium flex items-center">
+                    Reviews (137)
+                    <mat-icon class="ml-2 text-yellow-500">star</mat-icon>
+                    <mat-icon class="text-yellow-500">star</mat-icon>
+                    <mat-icon class="text-yellow-500">star</mat-icon>
+                    <mat-icon class="text-yellow-500">star</mat-icon>
+                    <mat-icon class="text-gray-300">star_half</mat-icon>
+                  </span>
+                  <mat-icon class="text-gray-600">expand_more</mat-icon>
+                </mat-expansion-panel-header>
+                <div class="p-4 text-sm text-gray-700">
+                  <p>Customer reviews will appear here.</p>
+                </div>
+              </mat-expansion-panel>
+            
+              <!-- Product Information Panel -->
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header class="px-4 py-2 flex justify-between items-center text-gray-900">
+                  <span class="text-base font-medium">Product Information</span>
+                  <mat-icon class="text-gray-600">expand_more</mat-icon>
+                </mat-expansion-panel-header>
+                <div class="p-4 text-sm text-gray-700">
+                  <p>Detailed product information will appear here.</p>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          
+          
         </div>
   
         <div class="lg:col-span-3">

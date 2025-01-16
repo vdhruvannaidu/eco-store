@@ -10,7 +10,7 @@
   <div class="flex items-center justify-between">
     <p class="mt-1 text-lg font-medium text-gray-900">${{ product.price }}</p>
     <button
-      
+      (click)="addToCart(product)"
       mat-flat-button
       color="filled-label-text-color"
     >
@@ -21,3 +21,9 @@
     </button>
   </div>
 </div>
+
+<ng-container>
+  <app-cart (cartClosed)="cartClosed($event)"></app-cart>
+</ng-container>
+
+
