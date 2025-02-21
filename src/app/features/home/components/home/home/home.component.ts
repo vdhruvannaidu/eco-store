@@ -34,7 +34,7 @@ export class HomeComponent {
     {
       id: 1,
       imageUrl:
-        'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-01.jpg',
+        'https://tailwindui.com/plus-assets/img/ecommerce-images/product-page-01-related-product-01.jpg',
       altText: '',
       name: 'Earthen Bottle',
       price: 35,
@@ -45,7 +45,7 @@ export class HomeComponent {
     {
       id: 2,
       imageUrl:
-        'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-02.jpg',
+        'https://tailwindui.com/plus-assets/img/ecommerce-images/product-page-01-related-product-02.jpg',
       altText: '',
       name: 'Nomad Tumbler',
       price: 35,
@@ -56,7 +56,7 @@ export class HomeComponent {
     {
       id: 3,
       imageUrl:
-        'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-03.jpg',
+        'https://tailwindui.com/plus-assets/img/ecommerce-images/product-page-01-related-product-03.jpg',
       altText: '',
       name: 'Nomad Tumbler',
       price: 35,
@@ -67,7 +67,7 @@ export class HomeComponent {
     {
       id: 4,
       imageUrl:
-        'https://tailwindui.com/plus/img/ecommerce-images/category-page-04-image-card-04.jpg',
+        'https://tailwindui.com/plus-assets/img/ecommerce-images/product-page-01-related-product-04.jpg',
       altText: '',
       name: 'Nomad Tumbler',
       price: 35,
